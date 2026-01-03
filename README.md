@@ -23,7 +23,7 @@ This is a fun, fast-paced browser game with a timer, score, and daily challenges
 
 ## Demo
 
-You can play it live here: (https://gummysnarl.itch.io/guessapp)
+You can play it live here: [GuessApp](https://gummysnarl.itch.io/guessapp)
 
 
 ## Screenshots
