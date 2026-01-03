@@ -23,17 +23,12 @@ This is a fun, fast-paced browser game with a timer, score, and daily challenges
 
 ## Demo
 
-You can play it live here: [Add your live link, e.g., Replit or VibeCode]
+You can play it live here: (https://gummysnarl.itch.io/guessapp)
 
-## Tech Stack
-
-- HTML, CSS, JavaScript
-- Pure frontend — no backend needed
-- SVG mockups for app UIs
 
 ## Screenshots
 
-![Screenshot](path-to-your-screenshot.png)
+![Screenshot]([path-to-your-screenshot.png](https://gummysnarl.itch.io/guessapp))
 
 ## Contributing
 
