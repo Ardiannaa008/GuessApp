@@ -28,7 +28,7 @@ You can play it live here: (https://gummysnarl.itch.io/guessapp)
 
 ## Screenshots
 
-![Screenshot]([assets/GuesApp1.png])
+![Screenshot](assets/GuesApp1.png)
 
 ## Contributing
 
