@@ -1,3 +1,4 @@
+
 :root{
   --bg:#0f1115;
   --card:#111318;
@@ -80,4 +81,85 @@ body{
   .card{max-width:920px}
   .image-wrap{height:420px}
   #uiImage, .image-wrap img { object-fit: contain; background: #07080a }
+}
+
+
+
+:root{
+  --bg:#0f1115;
+  --card:#111318;
+  --muted:#9aa3b2;
+  --accent:#ff3b7a;
+  --accent2:#22ffd6;
+  --success:#27ae60;
+  --danger:#ff4d4f;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+  background:linear-gradient(180deg,#0b0c0f 0%, #0f1115 100%);
+  color:#e6eef6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.wrap{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+.brand{width:100%;max-width:420px;display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.brand h1{font-size:18px;margin:0}
+.score-timer{display:flex;gap:12px;align-items:center}
+.score,.timer{color:var(--muted);font-size:14px}
+.card{width:100%;max-width:420px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:16px;padding:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.image-wrap{position:relative;height:auto;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#0b0b0b,#141518)}
+.image-wrap img{width:100%;height:100%;object-fit:cover;display:block;filter:blur(14px) grayscale(8%);transition:filter 360ms ease}
+.blur-overlay{position:absolute;inset:0;pointer-events:none}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.btn{background:linear-gradient(90deg,var(--accent),var(--accent2));border:0;color:#061018;padding:12px 14px;border-radius:12px;font-weight:600;cursor:pointer;transition:transform 180ms ease,opacity 150ms}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.btn.large{padding:12px 20px;font-size:16px}
+.controls{display:flex;gap:10px;justify-content:space-between;margin-top:12px}
+.choice-btn{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.03);padding:12px;border-radius:10px;color:var(--muted);font-weight:700}
+.choice-btn.correct{background:linear-gradient(90deg,#17c964,#12a65a);color:#00140b;animation:pop 420ms ease}
+.choice-btn.wrong{background:linear-gradient(90deg,#ff7b7b,#ff4d4d);color:#2b0000;animation:shake 420ms ease}
+@keyframes pop{0%{transform:scale(.98)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+@keyframes shake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}50%{transform:translateX(6px)}75%{transform:translateX(-4px)}100%{transform:translateX(0)}}
+.overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(1,2,6,0.6),rgba(1,2,6,0.8));backdrop-filter:blur(4px)}
+.overlay-card{background:var(--card);padding:18px;border-radius:14px;max-width:360px;width:92%;text-align:center}
+.overlay-actions{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.overlay.hidden{display:none}
+.footer{color:var(--muted);font-size:13px}
+.big{font-size:20px;font-weight:800}
+.muted{color:var(--muted)}
+
+@media(min-width:600px){
+  .image-wrap{height:300px}
+  .brand h1{font-size:20px}
+}
+
+#uiImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 👈 THIS is the key */
+
+}
+
+.image-wrapper {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 9 / 16;   /* 👈 makes it tall */
+  margin: auto;
+  background: #111;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }

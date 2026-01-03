@@ -65,3 +65,71 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guess the App by the UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="brand">
+      <h1>Guess the App by the UI</h1>
+      <div class="score-timer">
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="timer">Time: <span id="time">10</span>s</div>
+      </div>
+    </header>
+
+    
+
+
+
+    <section class="card" id="gameCard">
+      <div class="image-wrap">
+        <img id="uiImage" src="" alt="Blurred app UI"/>
+        <div id="blurOverlay" class="blur-overlay"></div>
+      </div>
+
+      <div class="choices" id="choices">
+        <!-- buttons injected by JS -->
+      </div>
+
+      <div class="controls">
+        <button id="nextBtn" class="btn ghost" disabled>Next ➜</button>
+        <button id="shareBtn" class="btn" title="Share your score">Share Score</button>
+      </div>
+    </section>
+
+    <div id="startOverlay" class="overlay">
+      <div class="overlay-card">
+        <h2>Daily Challenge</h2>
+        <p id="overlayMsg">Ready to guess some apps? You get one play per day — good luck!</p>
+        <div class="overlay-actions">
+          <button id="startBtn" class="btn large">Start Challenge</button>
+          <button id="viewRules" class="btn ghost">Rules</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="finalOverlay" class="overlay hidden">
+      <div class="overlay-card">
+        <h2>Daily Score</h2>
+        <p class="big">You scored <span id="finalScore">0</span> / <span id="totalQ">0</span></p>
+        <p id="finalCopy">Nice run — brag about it!</p>
+        <div class="overlay-actions">
+          <button id="replayBtn" class="btn large">Play Again</button>
+          <button id="closeFinal" class="btn ghost">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">Built by Ardiana 💻✨</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
